@@ -1,5 +1,7 @@
 # Receptive Field Visualizer
-![](./docs/demo.gif)
+
+[![](./docs/demo.gif)](https://jjennings955.github.io/receptive_field/)
+
 Check it out at: https://jjennings955.github.io/receptive_field/
 
 # TODO
