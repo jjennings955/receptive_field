@@ -14,7 +14,7 @@ for (var i = 0; i < NUM_LAYERS; i++)
 
 outputs = [input, layers[0].apply(input)]
 
-for (var i = 1; i < NUM_LAYERS; i++)
+for (var i = 2; i < NUM_LAYERS; i++)
 {
   outputs.push(layers[i].apply(outputs[i-1]));
 }
@@ -33,6 +33,7 @@ pixel = [Math.floor(e.offsetY/(CANVAS_SIZE[1]/SHAPE[1])), Math.floor(e.offsetX/(
   {
     canvas = document.getElementById(`out${NUM_LAYERS - i}`)
     foo3 = result[i].notEqual(0)
+    foo3.sum().print();
     tf.browser.toPixels(tf.image.resizeNearestNeighbor(foo3.squeeze(0).cast('float32'), [128,128]), canvas);
   }  
 }
@@ -46,3 +47,5 @@ drawReceptiveField({ offsetX: 64, offsetY: 64});
 // TODO: draw grid lines on each canvas
 
 // TODO: construct a different model for each canvas so we can visualize the receptive field starting only at a pixel from that layer
+
+// TODO: arbitrary
