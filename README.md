@@ -1,6 +1,6 @@
 # Receptive Field Visualizer
 ![](./docs/demo.gif)
-Check it out at: [https://jjennings955.github.io/receptive_field/]()
+Check it out at: https://jjennings955.github.io/receptive_field/
 
 # TODO
 * Use svg instead of canvas so we can get the fancy looking skew transforms (probably doable with canvas or other libraries also)
