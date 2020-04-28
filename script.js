@@ -40,7 +40,7 @@ pixel = [Math.floor(e.offsetY/(CANVAS_SIZE[1]/SHAPE[1])), Math.floor(e.offsetX/(
 last_canvas = document.getElementById('out5')
 last_canvas.addEventListener('mousemove', _.throttle(drawReceptiveField, 100));
 last_canvas.addEventListener("touchmove", _.throttle((e) => { drawReceptiveField(e.touches[0]) }));
-
+drawReceptiveField({ offsetX: 64, offsetY: 64});
 // TODO: use svg instead of canvas so we can get the fancy looking skew transforms (doable with canvas or other libraries also)
 
 // TODO: draw grid lines on each canvas

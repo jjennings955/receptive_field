@@ -9,6 +9,10 @@
   <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/1.7.3/tf.min.js"></script>
+    <h1>Receptive Field</h1>
+    <hr/>
+    <p>Instructions: Hover over a 'pixel' (output) in the last layer (final canvas) to view the receptive field for that pixel. This is the outputs of the previous layers that this pixel 'can see' (is a function of, depends on).</p>
+    <p>Note: Each layer output shape is 16x16, and we're assuming a filter size of 3x3, strides of 1x1, padding='same'</p>
     <canvas id="out1" width=128 height=128 style="border:1px solid #000000;"></canvas>
     <canvas id="out2" width=128 height=128 style="border:1px solid #000000;"></canvas>
     <canvas id="out3" width=128 height=128 style="border:1px solid #000000;"></canvas>
